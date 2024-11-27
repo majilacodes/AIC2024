@@ -22,7 +22,7 @@ const features = [
     },
     name: "New Molecule Discovery for Specific Targets",
     description: "A tool to discover new molecules for specific targets.",
-    href: "/bioactivity-predictor",
+    href: "/m1",
     cta: "Learn more",
     background: <img className="absolute -right-20 -top-20 opacity-60" />,
 
@@ -67,7 +67,7 @@ const features = [
     },
     name: "Protein Structure Predictor",
     description: "A comprehensive tool to predict protein structure.",
-    href: "http://localhost:8501",
+    href: "/m2",
     cta: "Learn more",
     background: <img className="absolute -right-20 -top-20 opacity-60" />,
     className: "lg:col-start-3 lg:col-end-3 lg:row-start-1 lg:row-end-2",

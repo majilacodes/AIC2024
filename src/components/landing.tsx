@@ -8,7 +8,7 @@ const akeila = localFont({ src: "../fonts/Akeila.otf" });
 const Landing = () => {
   return (
     <div className="z-50 w-full h-full relative flex size-full justify-center overflow-hidden bg-background md:shadow-xl">
-      <div className="mt-16 z-50 block text-center w-9/12 flex flex-col">
+      <div className="mt-16 z-50 block text-center w-9/12 flex flex-col h-screen">
         <div
           className={
             akeila.className +
@@ -21,7 +21,7 @@ const Landing = () => {
           Accelerating Innovation in Bioinformatics
         </div>
       </div>
-      {/* <Globe className="top-44 z-30" /> */}
+      <Globe className="top-44 z-30" />
       <div className="pointer-events-none absolute inset-0 h-full bg-[radial-gradient(circle_at_50%_200%,rgba(0,0,0,0.2),rgba(255,255,255,0))]" />
     </div>
   );

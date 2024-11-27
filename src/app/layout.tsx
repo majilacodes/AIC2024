@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import "@/app/assets/globals.css"
+import "@/app/assets/globals.css";
 import localFont from "next/font/local";
 const akeila = localFont({ src: "../fonts/Akeila.otf" });
 
@@ -15,9 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
-        {children}
-      </body>
+      <body className="bg-[#252525]">{children}</body>
     </html>
   );
 }

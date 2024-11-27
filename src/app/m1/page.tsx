@@ -138,8 +138,8 @@ const Inp = (
           value="6"
         />
       </div>
-      <div className="flex items-center gap-3  bg-gradient-to-br to-[#252525] from-[#303030] rounded-full mr-auto px-10 py-3 text-xl">
-        Search
+      <div className="flex items-center gap-3  bg-gradient-to-br to-[#252525] from-[#303030] rounded-full mr-auto px-10 py-3 text-xl font-bold">
+        Predict
       </div>
     </div>
     <div className="bg-[#353535] text-white p-6 rounded-lg w-[80em]">
@@ -231,42 +231,37 @@ const Dash = () => {
   const [view, setView] = useState("Input");
 
   return (
-    <div className="container flex flex-row">
+    <div className="container flex flex-row bg-[#252525]">
       <div className="w-[20%] bg-[#353535] px-10 py-10">
         <div className="flex items-center justify-between mb-8">
           <div className="flex items-center flex flex-col">
-            <div className="text-5xl font-bold">Pharmora</div>
+            <div className="text-5xl font-bold">
+              <a href="/">Pharmora</a>
+            </div>
           </div>
         </div>
 
         <div className="mb-8 flex flex-col gap-3">
           <a
             href="#"
-            className="font-medium text-2xl p-3 bg-gradient-to-br to-[#252525] from-[#303030] rounded-full px-10"
+            className={`font-medium text-2xl p-3 bg-gradient-to-br rounded-full px-10 ${view === "Input" ? "to-[#454545] from-[#606060]" : "to-[#252525] from-[#303030]"}`}
             onClick={() => setView("Input")}
           >
             Input
           </a>
           <a
             href="#"
-            className="font-medium text-2xl p-3 bg-gradient-to-br to-[#252525] from-[#303030] rounded-full px-10"
+            className={`font-medium text-2xl p-3 bg-gradient-to-br rounded-full px-10 ${view === "Result" ? "to-[#454545] from-[#606060]" : "to-[#252525] from-[#303030]"}`}
             onClick={() => setView("Result")}
           >
             Result
           </a>
           <a
             href="#"
-            className="font-medium text-2xl p-3 bg-gradient-to-br to-[#252525] from-[#303030] rounded-full px-10"
+            className={`font-medium text-2xl p-3 bg-gradient-to-br rounded-full px-10 ${view === "Simulation" ? "to-[#454545] from-[#606060]" : "to-[#252525] from-[#303030]"}`}
             onClick={() => setView("Simulation")}
           >
             Simulation
-          </a>
-          <a
-            href="#"
-            className="font-medium text-2xl p-3 bg-gradient-to-br to-[#252525] from-[#303030] rounded-full px-10"
-            onClick={() => setView("Analysis")}
-          >
-            Analysis
           </a>
         </div>
       </div>

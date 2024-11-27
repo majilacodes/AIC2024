@@ -33,7 +33,9 @@ const Dash2 = () => {
       <div className="w-[20%] bg-[#353535] px-10 py-10">
         <div className="flex items-center justify-between mb-8">
           <div className="flex items-center flex flex-col">
-            <div className="text-5xl font-bold">Pharmora</div>
+            <div className="text-5xl font-bold">
+              <a href="/">Pharmora</a>
+            </div>
           </div>
         </div>
 

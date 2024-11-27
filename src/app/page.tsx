@@ -8,12 +8,12 @@ import Dash2 from "./m2";
 export default function Home() {
   return (
     <div className="w-full bg-[#1f1f1f]">
-      {/* <Landing/>
+      <Landing />
       <BackgroundBeams />
-      <HeroScrollDemo/>
-      <Bento/>
-      <Footer></Footer> */}
-      <Dash />
+      <HeroScrollDemo />
+      <Bento />
+      <Footer></Footer>
+      {/* <Dash /> */}
       {/* <Dash2 /> */}
     </div>
   );
